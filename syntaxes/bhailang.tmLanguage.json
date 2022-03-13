@@ -1,0 +1,96 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Bhailang",
+  "patterns": [
+    {
+      "include": "#directives"
+    },
+    {
+      "include": "#strings_double_quotes"
+    },
+    {
+      "include": "#strings_single_quotes"
+    },
+    {
+      "include": "#null_literal"
+    },
+    {
+      "include": "#console_output"
+    },
+    {
+      "include": "#var_declaration"
+    },
+    {
+      "include": "#comment"
+    }
+  ],
+  "repository": {
+    "directives": {
+      "patterns": [
+        {
+          "name": "keyword.control.bhailang",
+          "match": "\\b(agar bhai|jab tak bhai|warna bhai)\\b"
+        }
+      ]
+    },
+    "strings_double_quotes": {
+      "name": "string.quoted.double.bhailang",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.bhailang",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "strings_single_quotes": {
+      "name": "string.quoted.single.bhailang",
+      "begin": "'",
+      "end": "'",
+      "patterns": [
+        {
+          "name": "constant.character.escape.bhailang",
+          "match": "\\\\."
+        }
+      ]
+    },
+    "null_literal": {
+      "name": "constant.language.null.bhailang",
+      "match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))nalla(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+    },
+    "console_output": {
+      "name": "entity.name.function.bhailang",
+      "match": "bol bhai"
+    },
+    "var_declaration": {
+      "name": "storage.type.bhailang",
+      "match": "bhai ye hai"
+    },
+    "comment": {
+      "patterns": [
+        {
+          "name": "comment.line.double-slash.bhailang",
+          "begin": "(^[ \\t]+)?((//)(?:\\s*((@)internal)(?=\\s|$))?)",
+          "end": "(?=$)",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.bhailang"
+            }
+          }
+        },
+        {
+          "name": "comment.block.documentation.bhailang",
+          "begin": "(/\\*)(?:\\s*((@)internal)(?=\\s|(\\*/)))?",
+          "end": "\\*/",
+          "beginCaptures": {
+            "0": {
+              "name": "punctuation.definition.comment.bhailang"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "scopeName": "source.bhailang"
+}

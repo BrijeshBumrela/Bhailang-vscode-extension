@@ -1,0 +1,38 @@
+{
+  "name": "bhailang-extension",
+  "displayName": "Bhailang - syntax highlight, autocomplete",
+  "description": "Provides syntax highlighting, autocomplete feature for programming language Bhailang",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.65.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "bhailang",
+        "aliases": [
+          "Bhailang",
+          "bhailang"
+        ],
+        "extensions": [
+          ".bhai"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "bhailang",
+        "scopeName": "source.bhailang",
+        "path": "./syntaxes/bhailang.tmLanguage.json"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BrijeshBumrela/Bhailang-vscode-extension.git"
+  }
+}
