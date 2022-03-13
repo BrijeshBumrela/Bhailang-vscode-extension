@@ -3,6 +3,7 @@
   "displayName": "Bhailang - syntax highlight, autocomplete",
   "description": "Provides syntax highlighting, autocomplete feature for programming language Bhailang",
   "version": "0.0.1",
+  "publisher": "BrijeshBumrela",
   "engines": {
     "vscode": "^1.65.0"
   },
@@ -34,5 +35,6 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/BrijeshBumrela/Bhailang-vscode-extension.git"
-  }
+  },
+  "icon": "images/icon.png"
 }
