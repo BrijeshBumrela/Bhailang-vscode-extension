@@ -29,7 +29,7 @@
       "patterns": [
         {
           "name": "keyword.control.bhailang",
-          "match": "\\b(agar bhai|jab tak bhai|warna bhai)\\b"
+          "match": "\\b(agar bhai|jab tak bhai|warna bhai|bas kar bhai)\\b"
         }
       ]
     },
@@ -88,6 +88,18 @@
               "name": "punctuation.definition.comment.bhailang"
             }
           }
+        }
+      ]
+    },
+    "booleans": {
+      "patterns": [
+        {
+          "name": "constant.language.boolean.true.bhailang",
+          "match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))sahi(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
+        },
+        {
+          "name": "constant.language.boolean.false.bhailang",
+          "match": "(?<![_$[:alnum:]])(?:(?<=\\.\\.\\.)|(?<!\\.))galat(?![_$[:alnum:]])(?:(?=\\.\\.\\.)|(?!\\.))"
         }
       ]
     }

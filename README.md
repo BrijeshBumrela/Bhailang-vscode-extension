@@ -6,8 +6,6 @@ Syntax highlighting, autocomplete features for the toy programming language  `Bh
 - Adds syntax highlighting
 - Autocomplete
 
-For example if there is an image subfolder under your extension project workspace:
-
 <br>
 
 [![image](https://www.linkpicture.com/q/syntax-highlighting.png)](https://www.linkpicture.com/view.php?img=LPic622de3d624d081639954605)

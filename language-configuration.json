@@ -15,6 +15,7 @@
   "autoClosingPairs": [
     ["hi bhai", "bye bhai"],
     ["bol", " bhai"],
+    ["bhai ye", " hai"],
     ["jab", " tak bhai"],
     ["agar", " bhai"],
     ["\"", "\""],
