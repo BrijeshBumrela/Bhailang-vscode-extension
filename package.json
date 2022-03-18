@@ -2,7 +2,7 @@
   "name": "bhailang-extension",
   "displayName": "Bhailang - syntax highlight, autocomplete",
   "description": "Provides syntax highlighting, autocomplete feature for programming language Bhailang",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "BrijeshBumrela",
   "engines": {
     "vscode": "^1.65.0"
