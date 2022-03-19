@@ -22,6 +22,9 @@
     },
     {
       "include": "#comment"
+    },
+    {
+      "include": "#booleans"
     }
   ],
   "repository": {
